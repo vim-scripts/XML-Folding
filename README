@@ -1,0 +1,9 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1438
+
+It pretend to be the fold solution for all XML/HTML/SVG and other xml derivated...
+
+This script supports:
+
+Tag folds between two different lines: <tag> </tag>
+Comments folds: <!-- comment -->
+CDATA folds content between "<!<CDATA[" and "]]>"
