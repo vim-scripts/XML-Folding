@@ -1,9 +1,9 @@
 " About XMLFolding Script                                                  {{{
 
-" XMLFolding version 1.0 - January 3rd, 2006
+" XMLFolding version 1.1 - May 13th, 2006
 " Author: Thadeu Aparecido Coelho de Paula
 " E-mail: thadeudepaula@gmail.com
-" WebPage: http://mundolivre.hostrix.com.br
+" WebPage: http://mundolivre.hostrixonline.com
 " 
 " This is my first vim script... at this point I already worked three
 " continual weeks to make it. Never give up your objectives!
@@ -83,7 +83,7 @@ set foldmethod=syntax
 
    " Matches and regions                                                   {{{
 
-syn region XMLFold start=+^[[:blank:]]*<\([^/?!><]*[^/]>\)\&.*\(<\1\|[[:alnum:]]\)$+ end=+^</.*[^-?]>$+ fold transparent keepend extend
+syn region XMLFold start=+^<\([^/?!><]*[^/]>\)\&.*\(<\1\|[[:alnum:]]\)$+ end=+^</.*[^-?]>$+ fold transparent keepend extend
 
 syn match XMLCData "<!\[CDATA\[\_.\{-}\]\]>" fold transparent extend
 
